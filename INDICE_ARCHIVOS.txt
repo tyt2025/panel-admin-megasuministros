@@ -1,0 +1,215 @@
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║   📚 ÍNDICE DE ARCHIVOS DE DOCUMENTACIÓN                     ║
+║      Módulo de Domicilios v2.2.0                             ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+
+
+┌───────────────────────────────────────────────────────────────┐
+│  🚀 ARCHIVOS PARA EMPEZAR (Lee en orden)                     │
+└───────────────────────────────────────────────────────────────┘
+
+   1️⃣  LEEME_PRIMERO.txt
+       → Guía rápida de inicio (5 pasos)
+       → Verificación post-deploy
+       → Solución de problemas comunes
+       👉 EMPIEZA AQUÍ
+
+   2️⃣  INSTRUCCIONES_SQL_SUPABASE.md
+       → Guía detallada para ejecutar SQL
+       → Qué hace cada línea
+       → Troubleshooting de errores SQL
+       👉 LEE ANTES DE EJECUTAR SQL
+
+   3️⃣  README_DOMICILIOS.md
+       → Resumen ejecutivo
+       → Lista de funcionalidades
+       → Verificación rápida
+       👉 RESUMEN GENERAL
+
+
+┌───────────────────────────────────────────────────────────────┐
+│  📖 DOCUMENTACIÓN COMPLETA                                    │
+└───────────────────────────────────────────────────────────────┘
+
+   📄 DOCUMENTACION_DOMICILIOS.md
+      • Funcionalidades detalladas
+      • Ejemplos de uso paso a paso
+      • Estructura de base de datos
+      • Tips y mejores prácticas
+      • Troubleshooting avanzado
+      • Próximas mejoras sugeridas
+      👉 DOCUMENTACIÓN COMPLETA
+
+
+┌───────────────────────────────────────────────────────────────┐
+│  📋 ARCHIVOS DE REFERENCIA                                    │
+└───────────────────────────────────────────────────────────────┘
+
+   📄 RESUMEN_CAMBIOS.txt
+      • Lista de todos los archivos nuevos
+      • Archivos modificados
+      • Flujo de uso típico
+      • Distribución de tarifas
+      • Consejos importantes
+      👉 REFERENCIA VISUAL
+
+   📄 INDICE_ARCHIVOS.txt
+      • Este archivo
+      • Guía de qué leer primero
+      👉 NAVEGACIÓN
+
+
+┌───────────────────────────────────────────────────────────────┐
+│  🗄️  ARCHIVOS TÉCNICOS                                        │
+└───────────────────────────────────────────────────────────────┘
+
+   📄 SQL_AGREGAR_DOMICILIO_COTIZACIONES.sql
+      • Script SQL para Supabase
+      • Agrega columnas a cotizaciones
+      • Crea índices
+      • Verificaciones
+      👉 EJECUTAR EN SUPABASE
+
+
+┌───────────────────────────────────────────────────────────────┐
+│  🗂️  ARCHIVOS DE CÓDIGO                                       │
+└───────────────────────────────────────────────────────────────┘
+
+   NUEVOS:
+   ├── app/domicilios/layout.js
+   ├── app/domicilios/page.js
+   └── app/domicilios/nuevo/page.js
+
+   MODIFICADOS:
+   ├── components/Sidebar.js
+   └── app/cotizaciones/nueva/page.js
+
+
+┌───────────────────────────────────────────────────────────────┐
+│  📖 CÓMO USAR ESTA DOCUMENTACIÓN                              │
+└───────────────────────────────────────────────────────────────┘
+
+   ESCENARIO 1: Primera vez instalando
+   
+   Orden de lectura:
+   1. LEEME_PRIMERO.txt (5 min)
+   2. INSTRUCCIONES_SQL_SUPABASE.md (3 min)
+   3. Ejecuta el SQL
+   4. Sube a GitHub
+   5. Verifica en Vercel
+   6. Lee README_DOMICILIOS.md para verificar
+   
+   
+   ESCENARIO 2: Ya instalé, quiero aprender a usar
+   
+   Orden de lectura:
+   1. README_DOMICILIOS.md (resumen)
+   2. DOCUMENTACION_DOMICILIOS.md (ejemplos)
+   3. Practica en el sistema
+   
+   
+   ESCENARIO 3: Algo no funciona
+   
+   Orden de lectura:
+   1. LEEME_PRIMERO.txt → Sección "Si algo no funciona"
+   2. DOCUMENTACION_DOMICILIOS.md → Sección "Troubleshooting"
+   3. INSTRUCCIONES_SQL_SUPABASE.md → Sección "Si algo sale mal"
+   
+   
+   ESCENARIO 4: Solo quiero referencia rápida
+   
+   Lee:
+   - RESUMEN_CAMBIOS.txt → Toda la info en un vistazo
+
+
+┌───────────────────────────────────────────────────────────────┐
+│  ⏱️  TIEMPO DE LECTURA ESTIMADO                               │
+└───────────────────────────────────────────────────────────────┘
+
+   📄 LEEME_PRIMERO.txt                    5 minutos
+   📄 INSTRUCCIONES_SQL_SUPABASE.md        5 minutos
+   📄 README_DOMICILIOS.md                 3 minutos
+   📄 DOCUMENTACION_DOMICILIOS.md         15 minutos
+   📄 RESUMEN_CAMBIOS.txt                  5 minutos
+   
+   TOTAL LECTURA COMPLETA:                33 minutos
+   LECTURA MÍNIMA (empezar):              10 minutos
+
+
+┌───────────────────────────────────────────────────────────────┐
+│  💡 CONSEJOS PARA APROVECHAR LA DOCUMENTACIÓN                │
+└───────────────────────────────────────────────────────────────┘
+
+   ✓ No necesitas leerlo todo de una vez
+   ✓ Empieza con LEEME_PRIMERO.txt
+   ✓ Usa los archivos como referencia
+   ✓ Guarda este ZIP como backup
+   ✓ Los ejemplos son reales y funcionan
+   ✓ Si algo no se entiende, busca en otro archivo
+
+
+┌───────────────────────────────────────────────────────────────┐
+│  🔍 BÚSQUEDA RÁPIDA                                           │
+└───────────────────────────────────────────────────────────────┘
+
+   "¿Cómo empiezo?"
+   → LEEME_PRIMERO.txt
+   
+   "¿Cómo ejecuto el SQL?"
+   → INSTRUCCIONES_SQL_SUPABASE.md
+   
+   "¿Qué se agregó al sistema?"
+   → README_DOMICILIOS.md o RESUMEN_CAMBIOS.txt
+   
+   "¿Cómo creo una cotización con domicilio?"
+   → DOCUMENTACION_DOMICILIOS.md → Sección "Ejemplos"
+   
+   "¿Cómo agrego un nuevo barrio?"
+   → DOCUMENTACION_DOMICILIOS.md → Sección "Funcionalidades"
+   
+   "Algo no funciona"
+   → LEEME_PRIMERO.txt → Sección "Si algo no funciona"
+   → DOCUMENTACION_DOMICILIOS.md → Sección "Troubleshooting"
+   
+   "¿Cuántos barrios hay?"
+   → RESUMEN_CAMBIOS.txt → 250 barrios
+   
+   "¿Qué archivos se modificaron?"
+   → RESUMEN_CAMBIOS.txt → Sección "Archivos"
+
+
+┌───────────────────────────────────────────────────────────────┐
+│  📞 INFORMACIÓN IMPORTANTE                                    │
+└───────────────────────────────────────────────────────────────┘
+
+   Todos los archivos están en formato:
+   • .txt  - Texto plano (abre con Bloc de notas)
+   • .md   - Markdown (abre con cualquier editor)
+   • .sql  - SQL (ejecuta en Supabase SQL Editor)
+
+   Los archivos .md se ven mejor en:
+   • Visual Studio Code
+   • GitHub (si los subes)
+   • Editores de markdown online
+
+
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║  📚 RESUMEN                                                   ║
+║                                                               ║
+║  • 6 archivos de documentación                                ║
+║  • 1 script SQL                                               ║
+║  • Todo en español                                            ║
+║  • Fácil de entender                                          ║
+║  • Con ejemplos reales                                        ║
+║                                                               ║
+║  👉 EMPIEZA CON: LEEME_PRIMERO.txt                            ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+
+
+                        v2.2.0
+           Panel Admin Tintas y Tecnología
+              30 de Octubre de 2025

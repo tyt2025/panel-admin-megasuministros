@@ -1,0 +1,241 @@
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║     🚚 MÓDULO DE DOMICILIOS v2.2.0                          ║
+║        GUÍA DE INICIO RÁPIDO                                 ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  📥 PASO 1: DESCARGAR Y EXTRAER                              │
+└──────────────────────────────────────────────────────────────┘
+
+   1. Descarga: panel-admin-domicilios-v2.2.0.zip
+   2. Extrae el contenido
+   3. Abre la carpeta: panel-admin-main/
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  🗄️  PASO 2: EJECUTAR SQL EN SUPABASE (2 min)               │
+└──────────────────────────────────────────────────────────────┘
+
+   1. Ve a: https://cxxifwpwarbrrodtzyqn.supabase.co
+   
+   2. Navega a: SQL Editor
+   
+   3. Abre el archivo: SQL_AGREGAR_DOMICILIO_COTIZACIONES.sql
+   
+   4. Copia TODO el contenido
+   
+   5. Pega en el SQL Editor
+   
+   6. Presiona: RUN (o F5)
+   
+   7. Verifica que veas:
+      ✅ "Columnas de domicilio agregadas exitosamente"
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  📤 PASO 3: SUBIR A GITHUB (1 min)                           │
+└──────────────────────────────────────────────────────────────┘
+
+   Opción A - Reemplazar todo:
+   
+   1. Ve a tu repositorio en GitHub
+   2. Elimina los archivos antiguos
+   3. Arrastra todo el contenido de: panel-admin-main/
+   4. Commit: "feat: módulo domicilios v2.2.0"
+   5. Push
+   
+   
+   Opción B - Con Git (si tienes):
+   
+   $ git add .
+   $ git commit -m "feat: módulo domicilios v2.2.0"
+   $ git push origin main
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  🚀 PASO 4: DEPLOY EN VERCEL (Automático)                    │
+└──────────────────────────────────────────────────────────────┘
+
+   1. Ve a: https://vercel.com/tintasytecnologias-projects
+   
+   2. Busca: panel-admin
+   
+   3. Vercel detectará los cambios automáticamente
+   
+   4. Espera 2-3 minutos mientras se despliega
+   
+   5. Verás el deploy completado con ✓
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  ✅ PASO 5: VERIFICAR QUE TODO FUNCIONA                      │
+└──────────────────────────────────────────────────────────────┘
+
+   1. Abre tu panel admin en el navegador
+   
+   2. Login con: tintasytecnologia1 / @Np2026.ñ
+   
+   3. Verifica en el Sidebar:
+      ✓ Debe aparecer: 🚚 Domicilios
+   
+   4. Haz clic en "Domicilios"
+      ✓ Debe mostrar 250 barrios
+   
+   5. Ve a "Cotizaciones" → "Nueva Cotización"
+      ✓ Debe aparecer checkbox: "¿Incluir envío a domicilio?"
+   
+   6. Activa el checkbox y busca un barrio
+      ✓ Debe autocompletar y mostrar el precio
+   
+   7. Crea una cotización de prueba
+      ✓ El valor del domicilio debe sumarse al total
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  📚 ARCHIVOS DE DOCUMENTACIÓN INCLUIDOS                      │
+└──────────────────────────────────────────────────────────────┘
+
+   📄 LEEME_PRIMERO.txt
+      → Este archivo (guía rápida)
+   
+   📄 README_DOMICILIOS.md
+      → Inicio rápido y verificación
+   
+   📄 DOCUMENTACION_DOMICILIOS.md
+      → Documentación completa
+      → Ejemplos de uso
+      → Troubleshooting
+   
+   📄 INSTRUCCIONES_SQL_SUPABASE.md
+      → Guía detallada para Supabase
+      → Qué hacer si hay errores
+   
+   📄 RESUMEN_CAMBIOS.txt
+      → Lista de todos los cambios
+      → Estructura del proyecto
+   
+   📄 SQL_AGREGAR_DOMICILIO_COTIZACIONES.sql
+      → Script SQL para Supabase
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  🎯 QUÉ SE AGREGÓ AL SISTEMA                                 │
+└──────────────────────────────────────────────────────────────┘
+
+   ✨ NUEVO MÓDULO: Domicilios
+      • Lista de 250 barrios con tarifas
+      • Búsqueda en tiempo real
+      • Editar precios inline
+      • Agregar nuevos domicilios
+      • Estadísticas de tarifas
+   
+   ✨ COTIZACIONES MEJORADAS:
+      • Opción de envío a domicilio
+      • Búsqueda de barrios
+      • Cálculo automático
+      • Guardado de delivery_id
+   
+   ✨ SIDEBAR:
+      • Nueva opción: 🚚 Domicilios
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  💡 CÓMO USAR EL MÓDULO                                      │
+└──────────────────────────────────────────────────────────────┘
+
+   CREAR COTIZACIÓN CON DOMICILIO:
+   
+   1. Ve a: Cotizaciones → Nueva Cotización
+   2. Selecciona cliente
+   3. Agrega productos
+   4. ✓ Activa: "Incluir envío a domicilio"
+   5. Busca: "El Rodadero" (o cualquier barrio)
+   6. Selecciona de la lista
+   7. El precio se suma automáticamente
+   8. Guarda la cotización
+   
+   
+   AGREGAR NUEVO BARRIO:
+   
+   1. Ve a: Domicilios → + Agregar Domicilio
+   2. Selecciona tipo: Barrio/Hotel/Negocio
+   3. Ingresa nombre: "Hotel Zuana"
+   4. Ingresa precio: 18000
+   5. Guarda
+   6. Ahora aparece en las búsquedas
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  📊 TARIFAS PRECARGADAS                                      │
+└──────────────────────────────────────────────────────────────┘
+
+   💚 $6,000   → Centro y cercanos   (110 barrios)
+   💛 $7-8,000 → Zona intermedia     (80 barrios)
+   🧡 $12-15K  → Alejados            (40 barrios)
+   ❤️  $16-26K  → Turísticos          (20 barrios)
+   
+   TOTAL: 250 barrios de Santa Marta
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  ⚠️  IMPORTANTE - LEE ESTO                                   │
+└──────────────────────────────────────────────────────────────┘
+
+   • Los 250 barrios YA ESTÁN en Supabase
+   • Solo necesitas AGREGAR 2 columnas a cotizaciones
+   • El SQL es SEGURO (no borra nada)
+   • Las cotizaciones existentes NO se afectan
+   • El deploy es automático en Vercel
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  🆘 SI ALGO NO FUNCIONA                                      │
+└──────────────────────────────────────────────────────────────┘
+
+   PROBLEMA: No aparece "Domicilios" en sidebar
+   → Verifica que subiste todos los archivos a GitHub
+   → Verifica que Vercel hizo el deploy
+   
+   PROBLEMA: No se cargan los 250 barrios
+   → Verifica que ejecutaste el SQL
+   → Ejecuta: SELECT COUNT(*) FROM delivery_rates;
+   → Debe dar: 250
+   
+   PROBLEMA: Error al guardar cotización
+   → Verifica que el SQL se ejecutó correctamente
+   → Revisa los logs en Vercel
+   
+   📖 MÁS AYUDA: Lee DOCUMENTACION_DOMICILIOS.md
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  📞 INFORMACIÓN DEL PROYECTO                                 │
+└──────────────────────────────────────────────────────────────┘
+
+   Proyecto:  Panel Admin Tintas y Tecnología
+   Versión:   v2.2.0
+   Fecha:     30 Octubre 2025
+   
+   Supabase:  https://cxxifwpwarbrrodtzyqn.supabase.co
+   Vercel:    https://vercel.com/tintasytecnologias-projects
+   
+   Usuario 1: tintasytecnologia1 / @Np2026.ñ
+   Usuario 2: tintasytecnologia2 / @Np2026.ñ
+
+
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║  🎉 ¡LISTO PARA USAR!                                        ║
+║                                                              ║
+║  Sigue los 5 pasos y tendrás el módulo funcionando          ║
+║  en menos de 10 minutos.                                     ║
+║                                                              ║
+║  Si tienes dudas, lee los archivos de documentación.        ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+
+                    ⭐ v2.2.0 ⭐

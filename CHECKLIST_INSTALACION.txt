@@ -1,0 +1,245 @@
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║   ✅ CHECKLIST DE INSTALACIÓN                               ║
+║      Módulo de Domicilios v2.2.0                             ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+
+Usa este checklist para asegurarte de completar todos los pasos.
+Marca cada ítem con [X] cuando lo completes.
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  📥 FASE 1: PREPARACIÓN                                      │
+└──────────────────────────────────────────────────────────────┘
+
+[ ] 1. Descargué el ZIP: panel-admin-domicilios-v2.2.0.zip
+[ ] 2. Extraje el contenido del ZIP
+[ ] 3. Tengo acceso a Supabase
+[ ] 4. Tengo acceso a GitHub
+[ ] 5. Tengo acceso a Vercel
+[ ] 6. Leí LEEME_PRIMERO.txt
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  🗄️  FASE 2: SUPABASE (SQL)                                  │
+└──────────────────────────────────────────────────────────────┘
+
+[ ] 1. Abrí Supabase: https://cxxifwpwarbrrodtzyqn.supabase.co
+[ ] 2. Navegué a SQL Editor
+[ ] 3. Abrí: SQL_AGREGAR_DOMICILIO_COTIZACIONES.sql
+[ ] 4. Copié TODO el contenido del archivo
+[ ] 5. Pegué en el SQL Editor de Supabase
+[ ] 6. Presioné RUN (o F5)
+[ ] 7. Vi el mensaje: "Columnas de domicilio agregadas exitosamente"
+[ ] 8. Verifiqué que hay 2 columnas nuevas en cotizaciones
+
+      Verificación:
+      [ ] delivery_id aparece en los resultados
+      [ ] delivery_price aparece en los resultados
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  📊 FASE 3: VERIFICAR BARRIOS (Opcional)                     │
+└──────────────────────────────────────────────────────────────┘
+
+[ ] 1. Ejecuté: SELECT COUNT(*) FROM delivery_rates;
+[ ] 2. El resultado es: 250
+[ ] 3. Los barrios están cargados correctamente
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  📤 FASE 4: GITHUB                                            │
+└──────────────────────────────────────────────────────────────┘
+
+[ ] 1. Abrí mi repositorio en GitHub
+[ ] 2. Seleccioné UNA de estas opciones:
+
+      OPCIÓN A - Reemplazar todo (Recomendado):
+      [ ] Eliminé los archivos antiguos del repo
+      [ ] Arrastré todos los archivos de panel-admin-main/
+      [ ] Hice commit: "feat: módulo domicilios v2.2.0"
+      
+      OPCIÓN B - Con Git:
+      [ ] git add .
+      [ ] git commit -m "feat: módulo domicilios v2.2.0"
+      [ ] git push origin main
+
+[ ] 3. Los archivos están en GitHub
+[ ] 4. Verifiqué que Sidebar.js se actualizó
+[ ] 5. Verifiqué que existe la carpeta app/domicilios/
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  🚀 FASE 5: VERCEL                                            │
+└──────────────────────────────────────────────────────────────┘
+
+[ ] 1. Abrí Vercel: https://vercel.com/tintasytecnologias-projects
+[ ] 2. Busqué el proyecto: panel-admin
+[ ] 3. Vi que Vercel detectó los cambios
+[ ] 4. El deploy comenzó automáticamente
+[ ] 5. Esperé 2-3 minutos
+[ ] 6. El deploy se completó con ✓ (check verde)
+[ ] 7. No hay errores en los logs
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  ✅ FASE 6: VERIFICACIÓN FUNCIONAL                            │
+└──────────────────────────────────────────────────────────────┘
+
+[ ] 1. Abrí el panel admin en el navegador
+[ ] 2. Hice login con: tintasytecnologia1 / @Np2026.ñ
+
+      Verificar Sidebar:
+      [ ] Aparece la opción "🚚 Domicilios"
+      [ ] Está entre "Productos" y "Reportes"
+
+      Verificar Módulo de Domicilios:
+      [ ] Hice clic en "Domicilios"
+      [ ] Se cargó la página correctamente
+      [ ] Veo 250 barrios en la lista
+      [ ] La búsqueda funciona
+      [ ] Puedo editar un precio (clic en ✏️)
+      [ ] Aparecen las estadísticas (min/max/promedio)
+
+      Verificar Agregar Domicilio:
+      [ ] Clic en "+ Agregar Domicilio"
+      [ ] Se abre el formulario
+      [ ] Puedo seleccionar tipo (Barrio/Hotel/Negocio)
+      [ ] Puedo ingresar nombre y precio
+      [ ] El botón "Guardar" funciona
+
+      Verificar Cotizaciones:
+      [ ] Fui a "Cotizaciones" → "Nueva Cotización"
+      [ ] Aparece checkbox "¿Incluir envío a domicilio?"
+      [ ] Activé el checkbox
+      [ ] Aparece el buscador de barrios
+      [ ] Busqué "El Rodadero" (o cualquier barrio)
+      [ ] Aparecen resultados con precios
+      [ ] Seleccioné un barrio
+      [ ] Se muestra la zona seleccionada con precio
+      [ ] El precio se suma en los totales
+
+      Verificar Guardado:
+      [ ] Creé una cotización de prueba con domicilio
+      [ ] Se guardó correctamente
+      [ ] El valor del domicilio está en el total
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  🎯 FASE 7: PRUEBAS ADICIONALES (Opcional)                   │
+└──────────────────────────────────────────────────────────────┘
+
+[ ] Creé una cotización SIN domicilio (funciona normal)
+[ ] Edité el precio de un domicilio existente
+[ ] Agregué un nuevo domicilio desde cero
+[ ] El nuevo domicilio aparece en las búsquedas
+[ ] Probé con el usuario tintasytecnologia2
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  📱 FASE 8: PRUEBA RESPONSIVE (Opcional)                     │
+└──────────────────────────────────────────────────────────────┘
+
+[ ] Probé en dispositivo móvil o tablet
+[ ] El módulo se ve correctamente
+[ ] Los botones son clickeables
+[ ] El formulario es usable
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  📚 FASE 9: DOCUMENTACIÓN                                     │
+└──────────────────────────────────────────────────────────────┘
+
+[ ] Leí README_DOMICILIOS.md
+[ ] Leí DOCUMENTACION_DOMICILIOS.md
+[ ] Entiendo cómo usar el módulo
+[ ] Guardé este ZIP como backup
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  🎉 INSTALACIÓN COMPLETADA                                    │
+└──────────────────────────────────────────────────────────────┘
+
+Si marcaste TODOS los ítems de las Fases 1-6:
+✅ El módulo está instalado correctamente
+✅ Todo está funcionando
+✅ Puedes empezar a usar el sistema
+
+¡FELICITACIONES! 🎊
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  ⚠️  SI ALGO NO FUNCIONÓ                                     │
+└──────────────────────────────────────────────────────────────┘
+
+Si algún ítem NO se pudo marcar:
+
+1. Identifica en qué fase quedaste
+2. Lee el archivo de documentación correspondiente:
+   
+   • Fase 1-2: INSTRUCCIONES_SQL_SUPABASE.md
+   • Fase 3: INSTRUCCIONES_SQL_SUPABASE.md
+   • Fase 4: LEEME_PRIMERO.txt
+   • Fase 5: LEEME_PRIMERO.txt
+   • Fase 6: DOCUMENTACION_DOMICILIOS.md → Troubleshooting
+
+3. Busca la sección de solución de problemas
+4. Intenta la solución sugerida
+5. Si persiste, revisa los logs:
+   - Supabase: SQL Editor → History
+   - Vercel: Deployments → Logs
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  📝 NOTAS                                                     │
+└──────────────────────────────────────────────────────────────┘
+
+• Guarda este checklist para futuras actualizaciones
+• Puedes imprimir este archivo si lo prefieres
+• Marca con [X] los ítems completados
+• Si algo falla, no continues al siguiente paso
+• Es normal que Vercel tarde 2-3 minutos
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  🔄 PARA ACTUALIZACIONES FUTURAS                              │
+└──────────────────────────────────────────────────────────────┘
+
+Si necesitas actualizar el módulo en el futuro:
+
+[ ] Backup de la base de datos actual
+[ ] Backup del código actual
+[ ] Ejecutar nuevo SQL (si hay)
+[ ] Subir nuevo código a GitHub
+[ ] Verificar deploy en Vercel
+[ ] Probar funcionalidades
+[ ] Marcar en este checklist
+
+
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║  📊 PROGRESO DE INSTALACIÓN                                  ║
+║                                                              ║
+║  Fases Completadas: ___ / 6                                  ║
+║  Verificaciones: ___ / 15                                    ║
+║                                                              ║
+║  Estado: [ ] En Progreso  [ ] Completado  [ ] Con Errores   ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+
+Fecha de instalación: ___ / ___ / 2025
+Instalado por: _______________________
+Tiempo total: _______ minutos
+
+
+                        v2.2.0
+           Panel Admin Tintas y Tecnología
+              30 de Octubre de 2025
+
+
+═══════════════════════════════════════════════════════════════
+              ¡Éxito en tu instalación! 🚀
+═══════════════════════════════════════════════════════════════
